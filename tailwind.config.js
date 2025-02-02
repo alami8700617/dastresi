@@ -7,6 +7,9 @@ module.exports = {
         mbl: "340px",
         des: "1000px",
       },
+      boxShadow:{
+        soft:"0 0 30px gray",
+      },
     },
   },
   plugins: [],

@@ -1,10 +1,10 @@
 {
-  "name": "diji-project",
+  "name": "dastresi",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind":"npx tailwindcss -i ./src/tailwind/main.css -o ./src/css/main.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/tailwind/main.css -o ./src/css/main.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
-    "swiper": "^11.2.1",
+    "swiper": "^11.2.2",
     "vite": "^6.0.11"
   },
   "devDependencies": {
