@@ -305,6 +305,94 @@
       </div>
     </div>
     <!-- #endregion -->
+    <!-- #region swiper -->
+    <div class="main-swiper">
+      <div class="main-swiper-center">
+        <div class="main-swiper-center-top">
+          <h1>دسته بندی های منتخب</h1>
+        </div>
+        <div class="main-swiper-center-bottom">
+          <div class="swiper category-selectiv">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-6.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-7.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-8.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-9.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region now-available -->
+    <div class="now-available">
+      <div class="now-available-center">
+        <div class="now-available-center-top">
+          <h1>دسته بندی های منتخب</h1>
+        </div>
+        <div class="now-available-center-bottom">
+          <div class="swiper now-available">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-6.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-7.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-8.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/main-swiper/image-9.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
   </body>
   <script src="./swiper/swiper-bundle.min.js"></script>
   <script>
@@ -315,6 +403,38 @@
       },
       pagination: {
         el: ".swiper-pagination",
+      },
+    });
+    var swiper = new Swiper(".category-selectiv", {
+      slidesPerView: 6,
+      spaceBetween: 5,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiper = new Swiper(".now-available", {
+      slidesPerView: 9,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // autoplay: {
+      //   delay: 1500,
+      //   disableOnInteraction: false,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   </script>

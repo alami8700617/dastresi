@@ -1,0 +1,21 @@
+@font-face{
+    font-family: iranyekan;
+    src: "../../font/IRANYekanWeb-Medium.woff2";
+}
+:root{
+    --font-family:iranyekan;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  width: 40px !important;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 19px !important;
+  color:gray;
+  font-weight: bold;
+}
