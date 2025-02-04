@@ -1,53 +1,95 @@
-.now-available {
-  width: 98%;
-  height: 700px;
-  margin: 0 auto;
-  margin-top: 10px;
-  background-color: red;
-  margin-top: 30px;
-  .now-available-center {
-    width: 98%;
-    height: inherit;
+.now-available{
+  width: 95%;
+  height: 740px;
+  background-color: #CBCBCB;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 15px;
+  .now-available-center{
+    width: 100%;
+    height: 660px;
     margin: 0 auto;
-    padding: 20px;
-    .now-available-center-top {
+    .now-available-center-top{
+      width: inherit;
+      height: 100px;
+    }
+    .now-available-center-bottom{
+      width: inherit;
+      height: 560px;
+      .swiper {
       width: 100%;
-      height: 70px;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
       display: flex;
-      h1 {
-        width: fit-content;
-        height: fit-content;
-        margin: 10px auto;
-        justify-content: center;
-        align-items: center;
-        font-family: var(--font-family);
-        font-size: 30px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 20px;
+      .item-one{
+        width: 98%;
+        height: inherit;
+        /* background-color: darkcyan; */
+        display: flex;
+        flex-flow: column;
+        .top-circle{
+          width:20px;
+          height: 20px;
+          background-color: black;
+          display: flex;
+          border-radius: 50%;
+          /* justify-content: start; */
+          /* align-items: start; */
+          margin-right: 320px;
+        }
+        .item-one-img{
+          margin: 0 auto; 
+          width: inherit;
+          height: 350px;
+          /* background-color:pink; */
+          img{
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            justify-content: center;
+            margin: 0 auto;
+          }
+        }
+        .item-one-explain{
+          width: inherit;
+          height: 30px;
+          /* background-color: burlywood; */
+          font-family: var(--font-family);
+          margin-top: 10px;
+          margin: 10px auto;
+          color:gray;
+        }
+        .item-one-more-explain{
+          width: inherit;
+          height: 30px;
+          /* background-color: burlywood; */
+          font-family: var(--font-family);
+          margin-top: 10px;
+          margin: 10px auto;
+          color: black;
+          
+          &:hover{
+            color: blue;
+          }
+        }
       }
     }
-    .now-available-center-bottom {
+
+    .swiper-slide img {
+      display: block;
       width: 100%;
-      height: 530px;
-      margin: 0 auto;
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 85%;
-        height: 85%;
-        object-fit: cover;
-      }
+      height: 100%;
+      object-fit: cover;
+    }
     }
   }
 }

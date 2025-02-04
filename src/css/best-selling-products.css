@@ -1,0 +1,94 @@
+.best-selling-products {
+  width: 95%;
+  height: 740px;
+  background-color: #CBCBCB;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 15px;
+  .best-selling-products-center {
+    width: 100%;
+    height: 660px;
+    margin: 0 auto;
+    .best-selling-products-center-top {
+      width: inherit;
+      height: 100px;
+    }
+    .best-selling-products-center-bottom {
+      width: inherit;
+      height: 560px;
+      /* background-color: aqua; */
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 20px;
+        .item-one {
+          width: 98%;
+          height: inherit;
+          display: flex;
+          flex-flow: column;
+          .top-circle {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            display: flex;
+            border-radius: 50%;
+            /* justify-content: start; */
+            /* align-items: start; */
+            margin-right: 320px;
+          }
+          .item-one-img {
+            margin: 0 auto;
+            width: inherit;
+            height: 350px;
+            /* background-color:pink; */
+            img {
+              width: inherit;
+              height: inherit;
+              object-fit: cover;
+              justify-content: center;
+              margin: 0 auto;
+            }
+          }
+          .item-one-explain {
+            width: inherit;
+            height: 30px;
+            /* background-color: burlywood; */
+            font-family: var(--font-family);
+            margin-top: 10px;
+            margin: 10px auto;
+            color: gray;
+          }
+          .item-one-more-explain {
+            width: inherit;
+            height: 30px;
+            /* background-color: burlywood; */
+            font-family: var(--font-family);
+            margin-top: 10px;
+            margin: 10px auto;
+            color: black;
+
+            &:hover {
+              color: blue;
+            }
+          }
+        }
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
