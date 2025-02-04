@@ -11,45 +11,77 @@
   </head>
   <body>
     <!-- #region header-->
+     <!-- mbl-header -->
      <div class="des:hidden
      mbl:w-full
      mbl:h-[70px]
      mbl:flex
-     mbl:bg-red-400
      " >
      <div class="des:hidden
     mbl:w-2/6
     mbl:h-full
-    mbl:bg-blue-200 
+    mbl:bg-gray-300 
+    mbl:flex
      " >
+     <div class="mbl:w-1/3 mbl:h-[60px]  " >
+      <div class="
+      mbl:w-[50%]
+      mbl:h-[4px]
+      mbl:bg-gray-600
+      mbl:mx-auto
+      mbl:mt-[23px]
+        " ></div>
+        <div class="
+      mbl:w-[50%]
+      mbl:h-[4px]
+      mbl:bg-gray-600
+      mbl:mx-auto
+      mbl:mt-[5px]
+        " ></div>
+        <div class="
+      mbl:w-[50%]
+      mbl:h-[4px]
+      mbl:bg-gray-600
+      mbl:mx-auto
+      mbl:mt-[5px]
+        " ></div>
+     </div>
      <img
      class="des:hidden
-     mbl:w-[90px]
-     mbl:h-[50px]
+     mbl:w-[80px]
+     mbl:h-[40px]
      mbl:justify-center
      mbl:flex
      mbl:mt-[10px]
-     mbl:mr-10
-     " 
-      src="./images/logo/image-1.png" alt="">
-    </div>
-     <div class="des:hidden" >
-
+     "src="./images/logo/image-1.png" alt=""></div>
+     <div class="des:hidden 
+     mbl:w-4/6 
+     mbl:h-[70px]
+     mbl:bg-gray-300
+     mbl:flex
+     mbl:justify-center
+     mbl:items-center
+     mbl:gap-[20px]
+     " >
+     <img class="mbl:w-[20px] mbl:h-[30px] mbl:mr-[130px]  " src="./images/svg/search.svg" alt="">
+     <img class="mbl:w-[20px] mbl:h-[30px]  " src="./images/svg/profile.svg" alt="">
+     <img class="mbl:w-[20px] mbl:h-[30px]  " src="./images/svg/shopping-cart.svg" alt="">
      </div>
     </div>
+    <!--header-mobile-endregion-->
     <div
       class="
       mbl:hidden
-      des:w-full des:h-[130px]  des:flex  des:justify-center des:items-center mbl:bg-red-300 "
+      des:w-full des:h-[130px]  des:flex  des:justify-center des:items-center "
     >
       <img
-        class="des:w-[120px] des:h-[50px] des:mb-[20px] des:mr-[30px]
-        mbl:w-[70px] mbl:h-[30px] mbl:mr-[30px]"
+        class="des:w-[120px] des:h-[50px] des:mb-[20px] des:mr-[10px]
+        "
         src="./images/logo/image-1.png"
         alt=""
       />
       <input
-        class=" mbl:hidden des:mr-[30px] des:w-[450px] des:h-[50px] des:mb-[20px] des:rounded-2xl des:font-bold des:font-[IranYekan] des:bg-[#F7F8FA] des:shadow-lg des:border-[1px]
+        class=" des:mr-[30px] des:w-[450px] des:h-[50px] des:mb-[20px] des:rounded-2xl des:font-bold des:font-[IranYekan] des:bg-[#F7F8FA] des:shadow-lg des:border-[1px]
         "
         type="text"
         placeholder="جستجو"
@@ -93,28 +125,29 @@
       <a href="">لوازم خانگی و شخصی</a>
       <a href=""> برندها</a>
     </div>
-    <hr />
-    <div class="slider">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/slider/image-1.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slider/image-2.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slider/image-3.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slider/image-4.png" alt="" />
-          </div>
-        </div>
-
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
     <!-- #endregion -->
+    <!-- #region slider-->
+     <hr />
+     <div class="slider">
+       <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+           <div class="swiper-slide">
+             <img  src="./images/slider/image-1.png" alt="" />
+           </div>
+           <div class="swiper-slide">
+             <img src="./images/slider/image-2.png" alt="" />
+           </div>
+           <div class="swiper-slide">
+             <img src="./images/slider/image-3.png" alt="" />
+           </div>
+           <div class="swiper-slide">
+             <img src="./images/slider/image-4.png" alt="" />
+           </div>
+         </div>
+         <div class="swiper-pagination"></div>
+       </div>
+     </div>
+      <!-- #endregion -->
     <!-- #region main-products-->
     <div
       class="des:w-[98%] des:h-[900px] des:bg-[#E2E2E2] des:mx-auto des:rounded-2xl des:flex-col des:p-[20px]"
