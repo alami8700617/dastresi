@@ -8,7 +8,7 @@ module.exports = {
         des: "1000px",
       },
       boxShadow:{
-        soft:"0 0 30px gray",
+        soft:"0 0 20px gray",
       },
     },
   },
