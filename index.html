@@ -128,8 +128,8 @@
      <hr />
      <!-- mobile -->
      <div class=" des:hidden mbl:w-[90%] mbl:h-[200px] mbl:flex      mbl:mx-auto mbl:mt-[10px]">
-         <div class="slider-m">
-            <div class="swiper mySwiper-mbl">
+         <div class="slider-header">
+            <div class="swiper mySwiper-mbl-header">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img class="img"  src="./images/slider/image-1.png" alt="" />
@@ -686,10 +686,12 @@
      </div>
     <!-- #endregion -->
     <!-- #region now-available-->
+     <!-- swiper-main-produvt-one desktop -->
+   <div class="mbl:hidden des:w-[100%] des:h-[800px] des:flex  des:mx-auto" >
     <div class="now-available">
       <div class="now-available-center">
         <div class="now-available-center-top">
-          <div class="des:w-full des:h-[100px] des:flex">
+          <div class=" mbl:hidden des:w-full des:h-[100px] des:flex">
             <p
               class="des:font-[iranyekan] des:items-center des:flex text-[35px] des:text-gray-600"
             >
@@ -698,9 +700,9 @@
           </div>
         </div>
         <div class="now-available-center-bottom">
-          <div class="swiper mynow-available">
+          <div class="swiper mynow-available  ">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide ">
                 <a href="">
                   <div class="item-one">
                     <div class="top-circle"></div>
@@ -1007,6 +1009,16 @@
         </div>
       </div>
     </div>
+   </div>
+     <!-- swiper-main-produvt-one mobile -->
+     <div class=" des:hidden mbl:w-[95%] mbl:h-[400px] mbl:flex-col      mbl:mx-auto mbl:mt-[10px] mbl:bg-red-400 mbl:mb-[20px]">
+      <div class="mbl:w-full mbl:h-[70px] mbl:bg-green-400 mbl:flex" >
+        <p class="mbl:font-[iranyekan] mbl:items-center mbl:flex mbl:text-[20px] des:text-gray-600" >همین الان موجود شد</p>
+      </div>
+      <div class="mbl:flex mbl:w-[98%] mbl:h-[330px] mbl:bg-blue-400 mbl:mx-auto " >
+        
+      </div>
+      </div>
     <!-- #endregion -->
     <!-- #region explain-for-site-->
      <div class=" des: w-full des:h-[500px] des:flex-col " >
@@ -1402,7 +1414,7 @@
         disableOnInteraction: false,
       },
     });
-    var swiper = new Swiper(".mySwiper-mbl", {
+    var swiper = new Swiper(".mySwiper-mbl-header", {
       effect: "fade",
       pagination: {
         el: ".swiper-pagination",
@@ -1411,6 +1423,14 @@
         delay: 2500,
         disableOnInteraction: false,
       },
+      
+    });
+    var swiper = new Swiper(".mySwiper-mbl-p-1", {
+      
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      
       
     });
     var swiper = new Swiper(".category-selectiv", {
