@@ -7,11 +7,10 @@ module.exports = {
         mbl: "340px",
         des: "1000px",
       },
-      boxShadow:{
-        soft:"0 0 20px gray",
+      boxShadow: {
+        soft: "0 0 20px gray",
       },
     },
   },
   plugins: [],
 };
-
