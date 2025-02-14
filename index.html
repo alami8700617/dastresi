@@ -1896,8 +1896,74 @@
        </div>
      </div>
      <!-- #endregion -->
-
-   
+    <!-- #region Latest articles -->
+     <div class="des:w-full des:h-[600px] des:mt-[100px] des:flex-col">
+      <div class="des:w-full des:h-[100px]   des:items-center des:flex" >
+        <h1 class=" des:w-1/6  des:text-[30px] des:font-[iranyekan] des:mr-[30px] des:flex des:items-center des:text-[#757575] des:font-bold">آخرین مقالات</h1>
+        <a class="des:w-5/6 des:h-[50px] des:flex des:items-center" href="">
+          <h3 class=" des:w-5/6 des:text-[18px] des:font-[iranyekan] des:ml-[50px] des:mr-[150px] des:justify-end des:flex des:items-center des:text-[#757575] des:font-bold" >ورود به بلاگ</h3>
+        <div class="des:w-[20px] des:translate-x-[45px] des:rotate-180 des:justify-start">
+        <img src="./images/svg/next.svg" alt="">
+        </div>
+        </a>
+      </div>
+      <div class="latest-article">
+        <div class="swiper slider-latest-article">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item-one">
+                <img src="./images/slider/latest-article/image-1.png" alt="">
+                <p>بهترین پاوربانک پاورولوژی + 8 مدل از با کیفیت ترین ها</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-one">
+                <img src="./images/slider/latest-article/image-2.png" alt="">
+                <p>بهترین ساعت‌ های هوشمند صفحه گرد: قیمت و مدل‌های برتر د...</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-one">
+                <img src="./images/slider/latest-article/image-3.png" alt="">
+                <p>راهنمای تشخیص شارژر اصلی آیفون و بهترین جایگزین‌ها</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-one">
+                <img src="./images/slider/latest-article/image-4.png" alt="">
+                <p>چرا باید از ماساژور چشم استفاده کنید؟</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-one">
+                <img src="./images/slider/latest-article/image-5.png" alt="">
+                <p>خرید بهترین هندزفری سیمی تا ۵۰۰ تومان</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-one">
+                <img src="./images/slider/latest-article/image-6.png" alt="">
+                <p>معرفی ۵ مدل از بهترین میکروفون بویا</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-one">
+                <img src="./images/slider/latest-article/image-7.png" alt="">
+                <p>راهنمای خرید بهترین میکروفون زیر ۱ میلیون تومان</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item-one">
+                <img src="./images/slider/latest-article/image-8.png" alt="">
+                <p>بهترین هارد اکسترنال SSD: سرعت و امنیت در کنار هم!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+     </div>
+    <!-- #endregion -->
 </body>
   <script src="./swiper/swiper-bundle.min.js"></script>
   <script>
@@ -2022,6 +2088,22 @@
          delay: 3000,
          disableOnInteraction: false,
        },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiper = new Swiper(".slider-latest-article", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //  autoplay: {
+      //    delay: 3000,
+      //    disableOnInteraction: false,
+      //  },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
